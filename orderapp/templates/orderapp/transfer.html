@@ -1,0 +1,21 @@
+{% extends 'base2_2.html' %}
+
+{% block content %}
+
+<div class="set2">
+    <h1>계좌이체</h1>
+</div>
+
+<div class="set3">
+    <h3>매장의 계좌번호는</h3>
+    <h3>신한은행</h3>
+    <h3>110-5711-2869 입니다.</h3>
+    <p>결제 완료 후 5분 내 입금 시 주문완료됩니다.</p>
+    <p>주문 완료 후 취소할 수 없습니다.</p>
+</div>
+
+<div class="set4">
+    <a href="{% url 'orderapp:order_report' %}">주문 기록</a>
+</div>
+
+{% endblock %}

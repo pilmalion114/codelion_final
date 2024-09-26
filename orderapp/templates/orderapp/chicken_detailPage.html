@@ -1,0 +1,24 @@
+{% extends 'base3.html' %}
+
+{% block content %}
+
+    <div class="set2">
+        <h4>후라이드 치킨</h4>
+    </div>
+    
+    <div >
+        <p>배달비(+3000원)</p>
+        <h4>총 금액: 19,000원</h4>
+    </div>
+
+    <div class="set4">
+          
+        <a href="{% url 'orderapp:order_create' %}"
+               class="btn btn-primary rounded-pill col-3">
+                결제
+        </a>
+    </div>
+    
+
+
+{% endblock %}

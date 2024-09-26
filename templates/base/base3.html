@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>base3</title>
+</head>
+<body>
+    <div class="set">
+        <div class="set1">
+            <div class="chicken_image">
+                <img src="../" width="500" height="250">
+            </div>
+
+            <div class="Previous">
+                <a href="../../real_page/Sample.html">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="50" height="50" rx="15" fill="#FFE699"/>
+                        <path d="M33.3337 11.083L30.8058 8.16406L16.667 24.4906L30.8058 40.8171L33.3337 37.8981L21.7227 24.4906L33.3337 11.083Z" fill="black"/>
+                        </svg>
+                        
+                </a>
+            </div>
+
+            <h2>우리동네 치킨</h2>
+
+        {% block content %} 
+
+        <!-- 개별코드 들어갈 곳 -->
+    
+        {% endblock %}
+        </div>
+    </div>
+</body>
+</html>

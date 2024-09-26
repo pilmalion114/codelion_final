@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>{{menu}}</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    .text-blue {
+      color: #6B9BEA;
+    }
+    .btn-warning {
+      --bs-btn-color: #000;
+      --bs-btn-bg: #FFE699;
+      --bs-btn-border-color: #FFE699;
+    }
+    .btn-secondary {
+      --bs-btn-bg: #D7E1F1;
+      --bs-btn-border-color: #D7E1F1;
+      --bs-btn-hover-bg: #6B9BEA;
+      --bs-btn-hover-border-color: #6B9BEA;
+      --bs-btn-active-bg: #6B9BEA;
+      --bs-btn-active-border-color: #6B9BEA;
+  }
+  </style>
+  </head>
+  <body>
+    <div
+      style="
+        height: 926px;
+        width: 428px;
+        margin: 0 auto;
+        padding: 50px 10px 100px;
+      "
+      class="d-flex flex-column overflow-auto"
+    >
+      <div class="row mb-2">
+        <svg
+          class="col ml-0 pl-0"
+          width="30"
+          height="50"
+          viewBox="45 0 30 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="50" height="50" rx="15" fill="#92B4EC" />
+          <path
+            d="M33 11.8606L30.4216 9L16 25L30.4216 41L33 38.1394L21.1568 25L33 11.8606Z"
+            fill="white"
+          />
+        </svg>
+        <!-- <a href="http://127.0.0.1:8000/orders/order_create/"> 이미지 </a> -->
+        <!-- <a href="{% url 'orderapp:order_create' %}"> 이미지 </a> -->
+        <h3 class="col d-flex justify-content-center align-items-center mb-0">
+          결제
+        </h3>
+        <div class="col invisible">right</div>
+      </div>
+      <div class="h-100">{% block content %} {% endblock %}</div>
+    </div>
+  </body>
+</html>
